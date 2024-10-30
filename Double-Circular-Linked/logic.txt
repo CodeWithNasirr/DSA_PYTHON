@@ -1,0 +1,20 @@
+insert_at_start=>>> 
+ager me isko pahle me add karunga to sabse pahle kya hoga ok lets start sab se pahle Newnode bana wo Newnode ke prev pe wo laga na ha jo self.start ka prev ha to simple likhna ha node.prev=self.start.prev then node ke next pe kya laga na ha self.start laga na ha kyu ki wo pahle wala ha NewNode ka kaam Khatam huya then aab usko line pe laga na ha sab se pahle last wale ko NewNode pe point karwana kese kare self.start.prev.next=NewNode then jo pahle wala tha uska prev NewNode pe Point karwana kese self.start.prev =NewNode thats it
+
+insert_at_last==>
+ ager me isko last me add karunga to sabse pahle kya hoga ok lets start NewNode create karo then uss NewNode prev pe pahle wale ka prev point karwana ha Q Qki pahle wale ka prev he last wala ha okkk kese kare NewNode.prev=self.start.prev then NewNode ke Next pe kya rakhe iske next pe pahle wala rakhe ge Q Qki ye linkedlist circular ha to last wala v pahle ko point karega okk kese kare NewNode.next=self.start then NewNode ko list pe add karna ha kese kare sab se pahle wo last wala tha uska next NewNode pe rakh de okk kese rakhe self.start.prev.next=NewNode and then aab pahle wala Node v NewNode ko point karna cahiye kese kare self.start.prev=NewNode
+
+
+insert_after==>
+ager me isko node After me add karunga to sabse pahle kya hoga ok lets start sabse pahle NewNode Create Karna Hoga Then NewNode ke prev pe kya point karega ? node karega prevese kese Newnode.prev=node okk to NewNode ke next pe kya point karega? newNode ke next pe node.next point karega Q or Kese Digram bana ke dekh kese NewNode.next=node.next okk abb isko list pe kese laye? node.next.prev=NewNode and Node.next=NewNode Thats it 
+
+
+delete_first==>
+sab se pahle jo pahle wale ka next ha uska uska prev last pe point karwana ha kese self.start.next.prev=self.start.prev then jo last wale ka next ha usko point karwana ha pahle wale ke next ke sath kese kare ? self.start.prev.next=self.start.next abb pahle wale ko remove karna ha wo kese kare jo head ha means start usko point kardena ha pahle wale ke next pe kese kare ?self.start=self.start.next
+
+
+delete_last==>
+sab se pahle last wale ka prev ko point karwana ha pahle wale pe kese kare ? self.start.prev ye last wala ha self.start.prev.prev ye second last ha to iska next pahle wala karna ha kese kare ? self.start.prev.prev.next=self.start then abb pahle wale ka prev secound last karna ha kese kare ? self.start.prev=self.start.prev.prev Thats it
+
+delete_item==>
+sab se pahle golu kya karna hoga hame check karna hoga dele kispe point kar raha ha ager wo pahle wale node pe point karaha ha to condition laga na self.start.item==del to call kardo delete_first wala func then loop chalana ha start.next se end tak check karna ha self.start.next == dele barabar ha to kya karo uss node ke next ke prev(start.next.next.prev) ko pahle wale pe point kardo (self.start) then pahle wale ka next ko uss node ke next pe point kardo (self.start.next=self.start.next.nxt)
