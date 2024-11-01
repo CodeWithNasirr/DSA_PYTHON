@@ -1,0 +1,11 @@
+Define a class Stack to implement stack data structure using list class.
+
+Define a method is_empty() to check if the stack is empty in Stack class.
+
+In Stack class, define push() method to add data onto the stack.
+
+In Stack class, define pop() method to remove top element from the stack.
+
+In Stack class, define peek() method to return top element on the stack.
+
+In Stack class, define size() method to return size of the stack, which is the number of items present in the stack.

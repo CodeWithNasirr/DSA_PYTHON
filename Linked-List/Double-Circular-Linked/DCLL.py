@@ -10,7 +10,6 @@ class DCLL(object):#2
     def __init__(self):
         self.start=None
 
-
     def empty(self):#3
         return self.start == None
 
@@ -98,9 +97,33 @@ class DCLL(object):#2
                         return
                     temp=temp.next
                 print(f"Item {dele} not found.")
+        
+    def __iter__(self):
+        if self.start is None:
+            return DCLL_ITERATOR(None)
+        else:
+            return DCLL_ITERATOR(self.start)
             
 
-
+class DCLL_ITERATOR:
+    def __init__(self,start):
+        self.current=start
+        self.fast=start
+        self.count=0
+    
+    def __iter__(self):
+        return self
+    
+    def __next__(self):
+        if self.current is None:
+            raise StopIteration
+        if self.current == self.fast and self.count==1:
+            raise StopIteration
+        else:
+            self.count=1
+        data=self.current.item
+        self.current=self.current.next
+        return data
 
             
 
@@ -115,6 +138,7 @@ if __name__=="__main__":
     # x.delete_first()
     # x.delete_last()
     x.delete_item(30)
-
-
     x.print_list()
+
+for i in (x):
+    print(i,end=" ")

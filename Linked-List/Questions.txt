@@ -10,4 +10,3 @@
 10-> In class SLL, define a method delete_first() to delete the first element from the list.
 11-> In class SLL, define a method delete_last() to delete the last element from the list.
 12-> In class SLL, define a method delete_item() to delete the element from the list.
-
