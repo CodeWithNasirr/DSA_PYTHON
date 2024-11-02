@@ -3,9 +3,12 @@ class Node(object):#Q1
         self.item=item
         self.next=next
  
+ 
 class SingleLinked(object): #Q2
     def __init__(self,head=None):
         self.head=head
+        
+
 
     def Check_Em(self):#Q3
             return self.head==None
@@ -117,21 +120,3 @@ class SLLITERATOR:
         self.current=self.current.next
         return data
 
-
-
-if __name__=='__main__':
-    obj=SingleLinked()
-    obj.insert_at_fast(10)
-    obj.insert_at_fast(20)
-    # obj.insert_at_last(100)
-    # node=obj.search(20)
-    # if node:
-        # obj.insert_after(node,50)
-    # obj.insert_after(obj.search(100),50)
-    # obj.delete_item(20)
-    # obj.delete_first()
-    # obj.delete_last()
-    obj.printFunc()
-
-for i in obj:
-    print(i,end=" ")

@@ -1,4 +1,4 @@
-class Node:
-    def __init__(self,item=None,next=None):
-        self.item=item
-        self.next=next
+lisst=[1,2]
+a=lisst.append(3)
+print(lisst)
+print(lisst.pop(0))

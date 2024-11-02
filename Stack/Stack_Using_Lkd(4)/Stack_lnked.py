@@ -6,7 +6,7 @@ class Stack:
 
     def is_empty(self):
         return self.sll.Check_Em
-
+ 
 
     def push(self,item):
         self.sll.insert_at_fast(item)

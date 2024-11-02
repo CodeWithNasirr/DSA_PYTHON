@@ -3,26 +3,24 @@ class Node(object):#Q1
         self.item=item
         self.next=next
  
+ 
 class SingleLinked(object): #Q2
     def __init__(self,head=None):
         self.head=head
-
+        self.end=None
+        
     def Check_Em(self):#Q3
             return self.head==None
 
 
     def insert_at_fast(self,item):#Q4
+        NewNode=Node(item)
         if self.head == None:
-            NewNode=Node(item)
             self.head=NewNode
+            self.end=NewNode
         else:
-            NewNode=Node(item)
-            # NewNode=Node(item,self.head)yaha per ye jo self.head ha ye Head nhi ha ye to head ka refrence ha matlab ki head jisko pointer karaha ha ye wo ha 
-            # self.head=NewNode
-            # This Two Up & Down Both Are Same 
-            NewNode.next=self.head #yaha per newNode.next=head pe point nhi karaha ha ye uspe point karega jispe head point karha ha thats means firstly head-->10 to ye 20 point kargea --> 10 ko
-            self.head=NewNode
-            # self.head.next=NewNode
+            self.end.next=NewNode
+            self.end=NewNode
         
     def insert_at_last(self,item):#Q5
         NewNode=Node(item)
@@ -117,21 +115,3 @@ class SLLITERATOR:
         self.current=self.current.next
         return data
 
-
-
-if __name__=='__main__':
-    obj=SingleLinked()
-    obj.insert_at_fast(10)
-    obj.insert_at_fast(20)
-    # obj.insert_at_last(100)
-    # node=obj.search(20)
-    # if node:
-        # obj.insert_after(node,50)
-    # obj.insert_after(obj.search(100),50)
-    # obj.delete_item(20)
-    # obj.delete_first()
-    # obj.delete_last()
-    obj.printFunc()
-
-for i in obj:
-    print(i,end=" ")

@@ -1,0 +1,13 @@
+Import module containing singly linked list code in your Python file.
+
+Define a class Stack to implement stack data structure by inheriting SinglyLinkedList class.
+
+Define a method is_empty() to check if the stack is empty in Stack class.
+
+In Stack class, define push() method to add data onto the stack.
+
+In Stack class, define pop() method to remove the top element from the stack.
+
+In Stack class, define peek() method to return the top element on the stack.
+
+In Stack class, define size() method to return the size of the stack that is the number of items present in the stack.

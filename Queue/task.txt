@@ -1,0 +1,5 @@
+1-Using list ✅
+2-by Extending List Class ✅
+3-Using Singly Linked Class✅
+4-By Extending Singly Linked Class
+5-Using Linked List Concept✅
