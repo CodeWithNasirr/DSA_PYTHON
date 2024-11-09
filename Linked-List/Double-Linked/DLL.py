@@ -82,6 +82,7 @@ class DLL(object):#2
             return
         else:
             self.head=self.head.next
+
     def delete_last(self):#11
         if self.head is None:
             return

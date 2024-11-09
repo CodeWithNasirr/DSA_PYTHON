@@ -1,7 +1,7 @@
 class priority:
     def __init__(self):
         self.list=[]
-    
+     
     def push(self,item,priority):
         index=0
         while(index<len(self.list)) and self.list[index][1]<=priority:

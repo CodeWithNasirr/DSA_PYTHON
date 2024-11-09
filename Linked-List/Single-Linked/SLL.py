@@ -5,7 +5,7 @@ class Node(object):#Q1
  
 class SingleLinked(object): #Q2
     def __init__(self,head=None):
-        self.head=head
+        self.head=head 
 
     def Check_Em(self):#Q3
             return self.head==None
@@ -63,10 +63,6 @@ class SingleLinked(object): #Q2
 
     def __iter__(self):#Q9
         return SLLITERATOR(self.head)
-
-
-
-
 
     def delete_first(self):#Q10
         if self.head is not None:
