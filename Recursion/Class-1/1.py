@@ -3,4 +3,4 @@ def printN(n):
         printN(n-1)
         print(n,end=" ")
     
-printN(40)
+printN(10)

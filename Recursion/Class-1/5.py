@@ -3,4 +3,4 @@ def even(n):
         even(n-1)
         print(2*n,end=" ")
 
-even(5)
+even(10)
